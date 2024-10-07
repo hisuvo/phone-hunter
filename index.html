@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Font Awasome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- DaisyUi and Tailwind css -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
-<body>
+<body class="container mx-auto">
     <header>
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -35,9 +41,90 @@
         </div>
     </header>
 
-    <main class="w-11/12 mx-auto">
+    <main class="w-11/12 mx-auto py-10">
+        <!-- search section -->
+        <section class="space-y-4 md:space-y-7">
+            <h2 class="text-2xl md:text-4xl font-semibold text-center">Search your phone</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-1 mt-8">
+                <label class="input input-bordered flex items-center gap-2">
+                    <input type="text" class="md:w-[20rem] grow" placeholder="Search your phone" />
+                </label>
+                <button class="btn btn-primary md:px-10 text-xl font-bold">Search</button>
+            </div>
+        </section>
 
+        <!-- All product section -->
+        <section class="py-8 space-y-12">
+            <!-- cards container -->
+            <div id="all_card container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div class="flex flex-col justify-center items-center gap-4 rounded-lg border p-6">
+                    <figure class="w-full bg-blue-50 py-7 px-16 rounded-lg">
+                        <img class="w-full object-cover" src="./assets/pngwing 7.png" alt="product imge">
+                    </figure>
+                    <div class="text-center space-y-2">
+                        <h3 class="text-2xl font-bold">Iphone 13 Pro Max</h3>
+                        <p class="text-lg">There are many variations of passages of available, but the majority have
+                            suffered</p>
+                        <h3 class="text-2xl font-bold">$999</h3>
+                    </div>
+                    <button class="btn btn-primary">Show Details</button>
+                </div>
+            </div>
+            <h2 class="flex justify-center"><button class="btn btn-lg btn-primary px-10">Show All</button></h2>
+
+        </section>
     </main>
+
+    <footer class=" bg-blue-50 pt-[120px]">
+        <section class="w-11/12 mx-auto flex flex-col gap-6 md:gap-0 md:flex-row justify-between items-center ">
+            <div>
+                <h2 class="text-[45px] font-bold">Hot Gadgets</h2>
+                <p class="text-lg font-semibold">You can definitely work.</p>
+            </div>
+            <div>
+                <h3 class="flex flex-col md:flex-row  justify-center items-center gap-4">
+                    <div>
+                        <p class="btn bg-white rounded-full"><i class="fa-brands fa-facebook-f text-2xl"></i></p>
+                        <p class="btn bg-white rounded-full"><i class="fa-brands fa-twitter text-2xl"></i></p>
+                        <p class="btn bg-white rounded-full"><i
+                                class="fa-brands fa-instagram text-2xl text-red-400"></i>
+                        </p>
+                    </div>
+                    <button class="btn btn-lg px-10 text-xl font-bold btn-primary">Join permium</button>
+                </h3>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xl font-medium">
+            <nav class="flex flex-col gap-2 justify-between items-center">
+                <h6 class="footer-title">Services</h6>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav class="flex flex-col gap-2 justify-between items-center">
+                <h6 class="footer-title">Company</h6>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav class="flex flex-col gap-2 justify-between items-center">
+                <h6 class="footer-title">Legal</h6>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </nav>
+            <nav class="flex flex-col gap-2 justify-between items-center">
+                <h6 class="footer-title">Explore</h6>
+                <a class="link link-hover">Features</a>
+                <a class="link link-hover">Enterprise</a>
+                <a class="link link-hover">Security</a>
+                <a class="link link-hover">Pricing</a>
+            </nav>
+        </section>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 
